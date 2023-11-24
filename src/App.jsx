@@ -6,11 +6,13 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import FlexContent from './components/FlexContent';
 import Stories from './components/Stories';
+import Cart from './components/Cart';
 
 const App = () => {
   return (
      <>
         <Navbar/>
+        <Cart/>
         <main className='flex flex-col gap-16 relative'>
           <Hero heroapi={heroapi} />
           <Sales endpoint={popularsales} ifExists/>
